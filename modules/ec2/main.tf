@@ -1,3 +1,8 @@
+provider "aws" {
+  region = var.aws_region
+}
+
+
 data "aws_ami" "amazon-linux-3" {
   most_recent = true
 
